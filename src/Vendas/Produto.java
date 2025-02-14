@@ -1,20 +1,19 @@
 package Vendas;
 
 public class Produto {
-
 	private int idProduto;
 	private String nome;
 	private String modelo;
-	private String descricaoProduto;
+	private String descricao;
 
-	public Produto(int idProduto, String nome, String modelo, String descricaoProduto) {
-		super();
+	public Produto(int idProduto, String nome, String modelo, String descricao) {
 		this.idProduto = idProduto;
 		this.nome = nome;
 		this.modelo = modelo;
-		this.descricaoProduto = descricaoProduto;
+		this.descricao = descricao;
 	}
 
+	// Getters e Setters
 	public int getIdProduto() {
 		return idProduto;
 	}
@@ -39,18 +38,17 @@ public class Produto {
 		this.modelo = modelo;
 	}
 
-	public String getDescricaoProduto() {
-		return descricaoProduto;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescricaoProduto(String descricaoProduto) {
-		this.descricaoProduto = descricaoProduto;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	@Override
 	public String toString() {
-		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", modelo=" + modelo + ", descricaoProduto="
-				+ descricaoProduto + "]";
+		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", modelo=" + modelo + ", descricao=" + descricao
+				+ "]";
 	}
-
 }

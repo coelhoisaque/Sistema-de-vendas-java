@@ -1,7 +1,6 @@
 package Vendas;
 
 public class Funcionario extends Pessoa {
-
 	private int idFuncionario;
 
 	public Funcionario(String nome, String endereco, int contato, int cpf, int idFuncionario) {
@@ -9,16 +8,16 @@ public class Funcionario extends Pessoa {
 		this.idFuncionario = idFuncionario;
 	}
 
-	int getIdFuncionario() {
+	public int getIdFuncionario() {
 		return idFuncionario;
 	}
 
-	void setIdFuncionario(int idFuncionario) {
+	public void setIdFuncionario(int idFuncionario) {
 		this.idFuncionario = idFuncionario;
 	}
 
 	@Override
 	public String toString() {
-		return "Funcionario [idFuncionario=" + idFuncionario + "]";
+		return "Funcionario [idFuncionario=" + idFuncionario + ", nome=" + getNome() + "]";
 	}
 }

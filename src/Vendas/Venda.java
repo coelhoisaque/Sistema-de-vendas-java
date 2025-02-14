@@ -1,17 +1,13 @@
 package Vendas;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Venda {
-	Funcionario funcionario;
-
-	Cliente cliente;
-
-	List<Produto> produtos = new ArrayList();
+	private Funcionario funcionario;
+	private Cliente cliente;
+	private List<Produto> produtos;
 
 	public Venda(Funcionario funcionario, Cliente cliente, List<Produto> produtos) {
-		super();
 		this.funcionario = funcionario;
 		this.cliente = cliente;
 		this.produtos = produtos;
@@ -19,13 +15,6 @@ public class Venda {
 
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		sb.append(funcionario + " \n");
-		sb.append(cliente + " \n");
-		for (Produto p : produtos) {
-			sb.append(p + "\n");
-		}
-		return sb.toString();
+		return "Venda [funcionario=" + funcionario + ", cliente=" + cliente + ", produtos=" + produtos + "]";
 	}
-
 }

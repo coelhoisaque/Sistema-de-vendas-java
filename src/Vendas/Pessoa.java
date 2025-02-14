@@ -7,13 +7,13 @@ public abstract class Pessoa {
 	private int cpf;
 
 	public Pessoa(String nome, String endereco, int contato, int cpf) {
-		super();
 		this.nome = nome;
 		this.endereco = endereco;
 		this.contato = contato;
 		this.cpf = cpf;
 	}
 
+	// Getters e Setters
 	public String getNome() {
 		return nome;
 	}
@@ -50,5 +50,4 @@ public abstract class Pessoa {
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", endereco=" + endereco + ", contato=" + contato + ", cpf=" + cpf + "]";
 	}
-
 }
