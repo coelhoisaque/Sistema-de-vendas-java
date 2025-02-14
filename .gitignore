@@ -1,0 +1,39 @@
+# Compiled class files
+*.class
+
+# Java JAR/WAR/EAR files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Windows & macOS system files
+Thumbs.db
+.DS_Store
+
+# IDE Specific Folders
+
+## VS Code
+.vscode/
+
+## Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+
+## IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven & Gradle build directories
+target/
+build/
+
+# Ignore dependencies folder (if manually managed)
+lib/
